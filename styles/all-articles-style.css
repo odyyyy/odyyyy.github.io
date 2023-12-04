@@ -129,6 +129,13 @@ body {
     text-align: center;
 }
 
+.parallax-content h1{
+  font-size:60px
+}
+
+.parallax-content p{
+  font-size:40px
+}
 
 
 
@@ -149,4 +156,13 @@ body {
     .article-title{
         font-size:10px;
     }
+}
+
+@media screen and (max-width: 700px) {
+  .parallax-content h1{
+      font-size:45px;
+  }
+  .parallax-content p{
+    font-size:30px;
+}
 }

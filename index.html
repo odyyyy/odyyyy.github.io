@@ -4,7 +4,8 @@
 <head>
   <title>ВСЁ о РСУБД</title> <!-- Заголовок страницы -->
   <meta charset="utf-8"> <!-- Кодировка -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <!-- Подключаем Swiper для слайдера -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -13,6 +14,7 @@
   <link rel="stylesheet" href="styles/header-style.css" type="text/css"> <!-- Стили шапки -->
   <link rel="stylesheet" href="styles/slider.css" type="text/css"> <!-- Стили слайдера -->
   <link rel="stylesheet" href="styles/style.css" type="text/css">
+  <link rel="stylesheet" href="styles/buttons.css" type="text/css">
   <link rel="stylesheet" href="styles/footer-style.css" type="text/css"> <!-- Стили футера -->
 
 
@@ -37,26 +39,8 @@
     </nav>
     <div class="auth">
 
-      <button class="notification-button">
-        <svg class="bell" viewBox="0 0 448 512">
-          <path
-            d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z">
-          </path>
-
-        </svg>
-        <span class="badge">0</span>
-
-        <div class="notification-popup">
-          <h3>Новые статьи:</h3>
-          <ul class="notification-list">
-            <!-- Добавьте больше элементов списка для других статей -->
-          </ul>
-        </div>
-
-      </button>
-
-      <!-- <a href="login.html"  class="login">Войти</a>
-      <a href="register.html"  class="register">Регистрация</a> -->
+      <a href="login.html" class="login">Войти</a>
+      <a href="register.html" class="register">Регистрация</a>
 
     </div>
 
@@ -74,30 +58,36 @@
 
       <div class="swiper">
 
-        <div class="parallax-bg" data-swiper-parallax="-5%"></div>
+        <div class="parallax-bg" data-swiper-parallax="-15%"></div>
 
         <div class="swiper-wrapper">
 
           <!-- Slides -->
           <div class="swiper-slide">
-            <h2 class="parallax-slider__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2" data-swiper-parallax-x="10" data-swiper-parallax-y="10">НА САЙТЕ МЫ...</h2>
-            <div class="parallax-slider__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-500" data-swiper-parallax-duration="500">
+            <h2 class="parallax-slider__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2"
+              data-swiper-parallax-x="10" data-swiper-parallax-y="10">НА САЙТЕ МЫ...</h2>
+            <div class="parallax-slider__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-500"
+              data-swiper-parallax-duration="500">
               Обсуждаем, учимся и делимся советами
 
             </div>
           </div>
           <div class="swiper-slide">
-            <h2 class="parallax-slider__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2"> Новые статьи
+            <h2 class="parallax-slider__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2"> Новые
+              статьи
             </h2>
-            <div class="parallax-slider__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-500" data-swiper-parallax-duration="500">
+            <div class="parallax-slider__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-500"
+              data-swiper-parallax-duration="500">
               Ежедневно
 
             </div>
           </div>
           <div class="swiper-slide">
-            <h2 class="parallax-slider__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2"> Читаем и делимся
+            <h2 class="parallax-slider__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2"> Читаем
+              и делимся
             </h2>
-            <div class="parallax-slider__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-500" data-swiper-parallax-duration="500">
+            <div class="parallax-slider__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-500"
+              data-swiper-parallax-duration="500">
               Книгами по СУБД
 
             </div>

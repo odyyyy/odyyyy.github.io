@@ -36,16 +36,18 @@ let captcha_text = document.querySelector(".captcha-text");
 let input_text = document.querySelector(".captcha-input");
 let button = document.querySelector(".form-button");
 
-let PATH_TO_INDEX = 'C:\\Users\\iliya\\OneDrive\\Рабочий стол\\Учеба\\FRONTEND(РКЧИР)\\Практические работы РКЧИР\\ПР10\\index.html'
+let PATH_TO_INDEX = 'index.html'
 
 
 captcha_text.innerText = string_captcha;
 
 button.addEventListener('click', function() {
     let user_input = input_text.value;
+    event.preventDefault();
     if (user_input ==  string_captcha) {
         alert("Добро пожаловать");
         window.location.href = PATH_TO_INDEX;
+        return;
     }
     else{
         event.preventDefault();

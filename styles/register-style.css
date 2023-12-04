@@ -142,6 +142,13 @@ button {
   cursor: pointer;
 }
 
+.captcha-text{
+  color: #fff;
+  font-weight: bold;  
+  font-size: 18px;
+  font-family: 'Comfortaa', sans-serif;
+}
+
 .captcha{
   display: grid;
   grid-template-columns: 1fr 1fr;

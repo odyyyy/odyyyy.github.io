@@ -61,5 +61,5 @@ function draw(event) {
 // по клику на копку вызываем функции
 likeButton.onclick = function(){
     showLikeButton();
-    drawLikeButton();
+    // drawLikeButton();
 }

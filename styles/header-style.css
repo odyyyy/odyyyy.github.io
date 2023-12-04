@@ -144,7 +144,7 @@ body{
 
     display: flex;
     flex-direction: column;
-    height: 40vh;
+    height: 60vh;
     transition: all 0.3s ease-in-out;
 
   }
@@ -162,8 +162,8 @@ body{
 /* Сдвиг лейбла при открытии меню */
   #check-menu:checked ~ .check-menu-label{
     height: 5vh;
-    top: 35vh;
-    right: 45vw;
+    top: 55vh;
+    right: 47vw;
   
 
   }

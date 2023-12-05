@@ -115,22 +115,6 @@ iframe {
 
 
 @media screen and (max-width: 1250px) {
-  /* #popular-articles {
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-    width: 84vw;
-  }
-
-  .popular-arcticles-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    order: 1;
-    
-  } */
 
   #popular-articles {
 
@@ -149,4 +133,8 @@ iframe {
   }
 
 
+}
+
+.about-us h2, .about-us p , .location p, .phone p, .email p{
+  color: #fff;
 }

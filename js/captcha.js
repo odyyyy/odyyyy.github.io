@@ -36,7 +36,7 @@ let captcha_text = document.querySelector(".captcha-text");
 let input_text = document.querySelector(".captcha-input");
 let button = document.querySelector(".form-button");
 
-let PATH_TO_INDEX = 'index.html'
+let PATH_TO_INDEX = '../index.html'
 
 
 captcha_text.innerText = string_captcha;
@@ -45,7 +45,7 @@ button.addEventListener('click', function() {
     let user_input = input_text.value;
     event.preventDefault();
     if (user_input ==  string_captcha) {
-        alert("Добро пожаловать");
+        alert("Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ");
         window.location.href = PATH_TO_INDEX;
         return;
     }
@@ -54,12 +54,12 @@ button.addEventListener('click', function() {
         captcha_text.innerText = numeric_captcha.captcha;
         user_input = input_text.value;
         if(user_input == numeric_captcha.result){
-            alert("Добро пожаловать");
+            alert("Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ");
             window.location.href = PATH_TO_INDEX;
             return;
         }
         else{
-            alert("Проверка не пройдена");
+            alert("РџСЂРѕРІРµСЂРєР° РЅРµ РїСЂРѕР№РґРµРЅР°");
         }
     }
 });

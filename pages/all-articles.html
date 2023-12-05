@@ -5,11 +5,11 @@
   <title>ВСЁ о РСУБД</title> <!-- Заголовок страницы -->
   <meta charset="utf-8"> <!-- Кодировка -->
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> <!-- Иконка вкладки -->
-  <link rel="stylesheet" href="styles/header-style.css" type="text/css"> <!-- Стили шапки -->
-  <link rel="stylesheet" href="styles/all-articles-style.css" type="text/css">
-  <link rel="stylesheet" href="styles/buttons.css" type="text/css"> <!-- Стили кнопок -->
-  <link rel="stylesheet" href="styles/footer-style.css" type="text/css"> <!-- Стили футера -->
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"> <!-- Иконка вкладки -->
+  <link rel="stylesheet" href="../styles/header-style.css" type="text/css"> <!-- Стили шапки -->
+  <link rel="stylesheet" href="../styles/all-articles-style.css" type="text/css">
+  <link rel="stylesheet" href="../styles/buttons.css" type="text/css"> <!-- Стили кнопок -->
+  <link rel="stylesheet" href="../styles/footer-style.css" type="text/css"> <!-- Стили футера -->
 </head>
 
 <body>
@@ -19,9 +19,9 @@
 
   <header class="header">
 
-    <a href="index.html" class="logo"><img src="images/logo.svg" alt="logo" width="50" height="50"></a>
+    <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="logo" width="50" height="50"></a>
     <nav class="header-nav">
-      <a href="index.html">Главная</a>
+      <a href="../index.html">Главная</a>
       <a href="all-articles.html" class="active">Все статьи</a>
       <a href="contact.html">Контакты</a>
       <a href="gallery.html">Галерея</a>
@@ -45,7 +45,7 @@
 
   <main>
 
-    <div class="parallax-container" id="parallaxSection" style="background-image: url('images/parallax2-1.jpg');">
+    <div class="parallax-container" id="parallaxSection" style="background-image: url('../images/parallax2-1.jpg');">
       <div class="parallax-content">
         <h1 >Майкл Стэйнер:</h1>
         <p >"Базы данных – это не просто хранилище данных, это стратегический актив для вашего
@@ -53,28 +53,13 @@
       </div>
     </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        var parallaxSection = document.getElementById('parallaxSection');
-
-        function handleScroll() {
-          var scrollPosition = window.scrollY;
-          parallaxSection.style.backgroundPositionY = -scrollPosition * 0.5 + 'px';
-        }
-
-        // Обработчик события прокрутки
-        window.addEventListener('scroll', handleScroll);
-
-        // Вызываем обработчик события прокрутки при загрузке страницы (если начальная прокрутка не в самом верху)
-        handleScroll();
-      });
-    </script>
+    <script src="../js/parallax.js"></script>
 
     <!-- Статья 1: Введение в РСУБД -->
     <div class="article-card" id="article1">
       <h2 class="article-title">Введение в РСУБД</h2>
       <div class="image-container">
-        <img src="images/intro.jpg" alt="РСУБД">
+        <img src="../images/intro.jpg" alt="РСУБД">
         <div class="overlay">
           <h3>Введение в РСУБД</h3>
           <p>В статье описываются основные термины связанные с БД, а также фундаментальные принципы при работе с СУБД.
@@ -89,7 +74,7 @@
             </svg>
           </button>
 
-          <script src="js/button.js"></script>
+          <script src="../js/button.js"></script>
 
 
         </div>
@@ -103,14 +88,12 @@
 
     <!-- Статья 2 -->
     <div class="article-card" id="article2">
-      <h2 class="article-title">10 советов по оптимизации баз данных</h2>
+      <h2 class="article-title">Как выбрать СУБД?</h2>
       <div class="image-container">
-        <img src="images/opt.jpeg" alt="10 советов по оптимизации баз данных">
+        <img src="../images/kak.jpg" alt="Как выбрать СУБД?">
         <div class="overlay">
-          <h3>10 советов по оптимизации баз данных</h3>
-          <p> В данной статье будут даны общие рекомендации по настройке оптимизации как БД, так и всей СУБД в целом.
-            Также
-            будут даны основные ...</p>
+          <h3>Как выбрать СУБД?</h3>
+          <p>В статье сравниваются лучшие СУБД на сегодняшний день</p>
           <button class="article-button" id="button2">Подробнее</button>
         </div>
       </div>
@@ -118,13 +101,12 @@
 
     <!-- Статья 3 -->
     <div class="article-card" id="article3">
-      <h2 class="article-title">Эффективные SQL-запросы</h2>
+      <h2 class="article-title">Способы защиты СУБД</h2>
       <div class="image-container">
-        <img src="images/sql-quary-article1.jpg" alt="Изображение статьи">
+        <img src="../images/sql-quary-article1.jpg" alt="Способы защиты СУБД">
         <div class="overlay">
-          <h3>Эффективные SQL-запросы</h3>
-          <p>Язык структурированных запросов (SQL) является незаменимым навыком в индустрии информатики, и вообще
-            говоря, изучение этого навыка...</p>
+          <h3>Способы защиты СУБД</h3>
+          <p>В статье излагаются способы и методы защиты СУБД</p>
           <button class="article-button" id="button3">
             <span class="text">Подробнее</span>
           </button>
@@ -132,20 +114,7 @@
       </div>
     </div>
 
-    <!-- Статья 4 -->
-    <div class="article-card" id="article4">
-      <h2 class="article-title">PostgreSQL: быстрый старт</h2>
-      <div class="image-container">
-        <img src="images/postgres.jpg" alt="PostgreSQL: быстрый старт">
-        <div class="overlay">
-          <h3>PostgreSQL: быстрый старт</h3>
-          <p>Введение в СУБД PostgreSQL, позволяющее начать работу с данной системой.</p>
-          <button class="article-button" id="button4">
-            <span class="text">Подробнее</span>
-          </button>
-        </div>
-      </div>
-    </div>
+
 
 
     <style>
@@ -160,7 +129,7 @@
       }
     </style>
 
-    <script src="js/truncate.js"></script>
+    <script src="../js/truncate.js"></script>
   </main>
 
 
@@ -171,8 +140,7 @@
 
       <div class="about-us">
         <h2>О нас</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odio molestiae blanditiis sint velit.
-          Facilis ipsa sit in. Quas et corrupti pariatur quod dolor. Quae maxime blanditiis neque provident atque!</p>
+        <p>Данный сайт создан с целью сформировать единое сообщество разработчиков, заинтересованных в последних технологиях в сфере реляционных баз данных.</p>
 
       </div>
 
@@ -217,7 +185,7 @@
       </div>
 
       <div class="footer-col">
-        <h2>Follow us</h2>
+        <h2>Подпишитесь</h2>
         <div class="social-icons">
 
 

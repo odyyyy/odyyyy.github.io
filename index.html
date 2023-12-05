@@ -30,17 +30,17 @@
     <a href="index.html" class="logo"><img src="images/logo.svg" alt="logo" width="50" height="50"></a>
     <nav class="header-nav">
       <a href="index.html" class="active">Главная</a>
-      <a href="all-articles.html">Все статьи</a>
-      <a href="contact.html">Контакты</a>
-      <a href="gallery.html">Галерея</a>
+      <a href="pages/all-articles.html">Все статьи</a>
+      <a href="pages/contact.html">Контакты</a>
+      <a href="pages/gallery.html">Галерея</a>
 
 
       <!-- <div class="arrow">›</div> -->
     </nav>
     <div class="auth">
 
-      <a href="login.html" class="login">Войти</a>
-      <a href="register.html" class="register">Регистрация</a>
+      <a href="pages/login.html" class="login">Войти</a>
+      <a href="pages/register.html" class="register">Регистрация</a>
 
     </div>
 
@@ -120,31 +120,37 @@
         <div class="popular-article-content">
           <h2>Введение в РСУБД</h2>
           <p>
-            В статье описываются основные понятия РСУБД.
+            В статье описываются основные понятия РСУБД
           </p>
-          <button class="article-button" id="button1">Подробнее</button>
+          <a href="pages/intro-article.html">
+            <button class="article-button" id="button1">Подробнее</button>
+          </a>
+
         </div>
       </div>
 
       <div class="popular-article-card">
         <span></span>
         <div class="popular-article-content">
-          <h2> SQL-запросы</h2>
+          <h2>Как выбрать СУБД?</h2>
           <p>
-            В статье разбираются основы SQL
+            В статье сравниваются лучшие СУБД на сегодняшний день
           </p>
-          <button class="article-button" id="button1">Подробнее</button>
+          <a href="pages/rdbms-compare.html">
+            <button class="article-button" id="button2">Подробнее</button>
+          </a>
+
         </div>
       </div>
 
       <div class="popular-article-card">
         <span></span>
         <div class="popular-article-content">
-          <h2>PostgreSQL</h2>
+          <h2>Способы защиты СУБД</h2>
           <p>
-            Введение в СУБД PostgreSQL.
+            В статье излагаются способы и методы защиты СУБД
           </p>
-          <button class="article-button" id="button1">Подробнее</button>
+          <a href="pages/dbms-safety.html"><button class="article-button" id="button1">Подробнее</button></a>
         </div>
       </div>
     </div>
@@ -156,19 +162,21 @@
     <div class="new-articles-container article-container">
 
       <div class="new-articles-card">
-        <h2>ФИЗИЧЕСКАЯ ОРГАНИЗАЦИЯ ДАННЫХ</h2>
-        <button class="article-button" id="button1">Подробнее</button>
+        <h2>КАК ВЫБРАТЬ СУБД?</h2>
+        <a href="pages/rdbms-compare.html"><button class="article-button" id="button1">Подробнее</button></a>
 
       </div>
 
       <div class="new-articles-card">
-        <h2>ЗАБЛУЖДЕНИЕ О ТОМ, ЧТО СУБД И БД ОДНО И ТО ЖЕ</h2>
-        <button class="article-button" id="button1">Подробнее</button>
+        <h2>СПОСОБЫ ЗАЩИТЫ СУБД</h2>
+        <a href="pages/dbms-safety.html"><button class="article-button" id="button1">Подробнее</button></a>
+
       </div>
 
       <div class="new-articles-card">
-        <h2>ЭЛЕМЕНТЫ ПРОЕКТИРОВАНИЯ БАЗ ДАННЫХ</h2>
-        <button class="article-button" id="button1">Подробнее</button>
+        <h2>ВВЕДЕНИЕ В РСУБД</h2>
+        <a href="pages/intro-article.html"><button class="article-button" id="button1">Подробнее</button></a>
+
       </div>
 
     </div>
@@ -180,48 +188,58 @@
     <div class="best-article-container article-container">
 
       <div class="best-article-card">
-        <div class="best-article-card-img"></div>
-        <div class="best-article-card-info">
-          <div class="best-article-card-text">
-            <p class="text-title">Как выбрать СУБД?</p>
-            <p class="text-subtitle">В статье сравниваются лучшие СУБД на сегодняшний день</p>
+        <a href="pages/rdbms-compare.html">
+          <div class="best-article-card-img"></div>
+          <div class="best-article-card-info">
+            <div class="best-article-card-text">
+              <p class="text-title">Как выбрать СУБД?</p>
+              <p class="text-subtitle">В статье сравниваются лучшие СУБД на сегодняшний день</p>
+            </div>
+            <div class="best-article-card-icon">
+              <svg viewBox="0 0 28 25" class="arrow">
+                <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+              </svg>
+            </div>
           </div>
-          <div class="best-article-card-icon">
-            <svg viewBox="0 0 28 25" class="arrow">
-              <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
-            </svg>
+        </a>
+
+      </div>
+
+
+      <div class="best-article-card">
+        <a href="pages/dbms-safety.html">
+          <div class="best-article-card-img"></div>
+          <div class="best-article-card-info">
+            <div class="best-article-card-text">
+              <p class="text-title">Способы защиты СУБД</p>
+              <p class="text-subtitle">В статье описываются основные понятия РСУБД</p>
+            </div>
+            <div class="best-article-card-icon">
+              <svg viewBox="0 0 28 25" class="arrow">
+                <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+              </svg>
+            </div>
           </div>
-        </div>
+        </a>
+
       </div>
 
       <div class="best-article-card">
-        <div class="best-article-card-img"></div>
-        <div class="best-article-card-info">
-          <div class="best-article-card-text">
-            <p class="text-title">Способы защиты СУБД</p>
-            <p class="text-subtitle">В статье излагаются способы и методы защиты СУБД</p>
+        <a href="pages/intro-article.html">
+          <div class="best-article-card-img"></div>
+          <div class="best-article-card-info">
+            <div class="best-article-card-text">
+              <p class="text-title">Введение в РСУБД</p>
+              <p class="text-subtitle">Рассматривается текущее состояние российского рынка</p>
+            </div>
+            <div class="best-article-card-icon">
+              <svg viewBox="0 0 28 25" class="arrow">
+                <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+              </svg>
+            </div>
           </div>
-          <div class="best-article-card-icon">
-            <svg viewBox="0 0 28 25" class="arrow">
-              <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
-            </svg>
-          </div>
-        </div>
-      </div>
+        </a>
 
-      <div class="best-article-card">
-        <div class="best-article-card-img"></div>
-        <div class="best-article-card-info">
-          <div class="best-article-card-text">
-            <p class="text-title">Кто есть кто на российском рынке СУБД?</p>
-            <p class="text-subtitle">Рассматривается текущее состояние российского рынка</p>
-          </div>
-          <div class="best-article-card-icon">
-            <svg viewBox="0 0 28 25" class="arrow">
-              <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
-            </svg>
-          </div>
-        </div>
       </div>
 
     </div>
@@ -238,8 +256,8 @@
 
       <div class="about-us">
         <h2>О нас</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odio molestiae blanditiis sint velit.
-          Facilis ipsa sit in. Quas et corrupti pariatur quod dolor. Quae maxime blanditiis neque provident atque!</p>
+        <p>Данный сайт создан с целью сформировать единое сообщество разработчиков, заинтересованных в последних
+          технологиях в сфере реляционных баз данных.</p>
 
       </div>
 
@@ -284,7 +302,7 @@
       </div>
 
       <div class="footer-col">
-        <h2>Follow us</h2>
+        <h2>Подпишитесь</h2>
         <div class="social-icons">
 
 

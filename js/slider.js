@@ -25,7 +25,7 @@ const swiper = new Swiper('.swiper', {
     },
 
     autoplay: {
-        delay: 2000,
+        delay: 1500,
         // stopOnLastSlide: true,
         disableOnInteraction: false
     }

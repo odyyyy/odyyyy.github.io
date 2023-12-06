@@ -6,9 +6,8 @@ function truncate(str, maxlength) {
     }
 }
 
-let longText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
 let MAX_LENGHT = 70;
-let truncatedText = truncate(longText, MAX_LENGHT);
 
 all_article_desc_text = document.querySelectorAll(".overlay p");
 
@@ -19,4 +18,3 @@ for (let article_desc of all_article_desc_text) {
     article_desc.innerHTML = truncatedDescription;
 }
 
-console.log(all_article_desc_text);

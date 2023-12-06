@@ -22,13 +22,13 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
+  /* w 631 h 491 */
   .article-card {
     margin-top: 35px;
     margin-bottom: 35px;
     background-color: #ffffff;
-    width: 35vw;
-    height: 25vw;
+    width: 650px;
+    height: 480px;
     background-color: white;
     /* max-width: 800px; */
     /* margin: 0 auto; */
@@ -146,7 +146,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1050px) {
+/* @media screen and (max-width: 1050px) {
     .article-title{
         font-size:15px;
     }
@@ -156,13 +156,17 @@ body {
     .article-title{
         font-size:10px;
     }
-}
+} */
 
 @media screen and (max-width: 700px) {
   .parallax-content h1{
-      font-size:45px;
+      font-size:35px;
   }
   .parallax-content p{
-    font-size:30px;
+    font-size:23px;
 }
+  .article-card{
+    width: 90%;
+    height: 35%;
+  }
 }

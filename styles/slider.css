@@ -74,7 +74,7 @@
     height: 100%;
     width: 130%;
 
-    background-image: url("pr2.jpeg");
+    background-image: url("../images/slider-img.jpeg");
 }
 
 .swiper-wrapper{

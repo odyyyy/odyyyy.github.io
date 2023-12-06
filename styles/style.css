@@ -485,4 +485,6 @@ main {
 }
 
 
-
+.new-articles-card a{
+  z-index: 1;
+}

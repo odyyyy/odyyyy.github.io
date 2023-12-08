@@ -31,8 +31,10 @@ main{
   background: rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   padding: 20px;
-  width: 60vw;
-  height: 31vh;
+  /* 60vw */
+  width: 100%; 
+  /* 31vh */
+  height: 100%;
   text-align: center;
   backdrop-filter: blur(10px);
   transition: all 0.3s;
@@ -94,9 +96,9 @@ button {
 
 
 @media screen and (max-width: 850px) {
-    .glassmorphism-form{
+    /* .glassmorphism-form{
         height: 55vh;
-    }
+    } */
     .contact-form {
         
       grid-template-columns: 1fr; /* Одна колонка */

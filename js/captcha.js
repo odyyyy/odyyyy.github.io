@@ -10,7 +10,6 @@ function generate_simple_captcha() {
         const randomIndex = Math.floor(Math.random() * characters.length);
         captcha += characters.charAt(randomIndex);
     }
-
     return captcha;
 }
 
@@ -23,13 +22,10 @@ function generate_numeric_captcha() {
         result,
         captcha: `${num_1} + ${num_2}`
     }
-
     return numeric_captcha;
-
 }
 
 let string_captcha = generate_simple_captcha();
-
 let numeric_captcha = generate_numeric_captcha();
 
 let captcha_text = document.querySelector(".captcha-text");
@@ -38,10 +34,9 @@ let button = document.querySelector(".form-button");
 
 let PATH_TO_INDEX = '../index.html'
 
-
 captcha_text.innerText = string_captcha;
 
-button.addEventListener('click', function() {
+button.addEventListener('click', function(event) {
     let user_input = input_text.value;
     event.preventDefault();
     if (user_input ==  string_captcha) {

@@ -1,24 +1,21 @@
+let categoryElementsList = document.querySelectorAll('.category-container');
+let fadeInFromLeftThresholds = [0.6, 0.5, 0.7]; 
+
 window.addEventListener('scroll', function() {
-    var categoryElementsList = document.querySelectorAll('.category-container');
   
-    var scrollY = window.scrollY || document.documentElement.scrollTop;
-  
-    if (scrollY >= 500) {
-      categoryElementsList[0].classList.add('fadeInFromLeft');
+  let scrollY = window.scrollY || document.documentElement.scrollTop;
+  let windowHeight = window.innerHeight;
+
+ 
+
+  categoryElementsList.forEach(function(categoryElement, index) {
+    let elementOffset = categoryElement.offsetTop;
+    let fadeInThreshold = elementOffset - windowHeight * fadeInFromLeftThresholds[index];
+
+    if (scrollY >= fadeInThreshold) {
+      categoryElement.classList.add('fadeInFromLeft');
     } else {
-      categoryElementsList[0].classList.remove('fadeInFromLeft');
+      categoryElement.classList.remove('fadeInFromLeft');
     }
-
-    if (scrollY >= 1500) {
-        categoryElementsList[1].classList.add('fadeInFromLeft');
-      } else {
-        categoryElementsList[1].classList.remove('fadeInFromLeft');
-      }
-
-      if (scrollY >= 2200) {
-        categoryElementsList[2].classList.add('fadeInFromLeft');
-      } else {
-        categoryElementsList[2].classList.remove('fadeInFromLeft');
-      }
   });
-  
+});

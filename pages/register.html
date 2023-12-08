@@ -22,7 +22,6 @@
       <a href="../index.html">Главная</a>
       <a href="all-articles.html">Все статьи</a>
       <a href="contact.html">Контакты</a>
-      <a href="gallery.html">Галерея</a>
 
 
       <!-- <div class="arrow">›</div> -->
@@ -31,7 +30,8 @@
 
       <a href="login.html"  class="login">Войти</a>
       <a href="register.html" class="active" class="register">Регистрация</a>
-
+        
+      
     </div>
 
 
@@ -58,11 +58,16 @@
           <input type="text" placeholder="Имя">
           <input type="email" placeholder="Email">
           <input type="password" placeholder="Пароль">
+          <div class="captcha">
+            <span class="captcha-text" id="captcha-text"></span>
+            <input type="text" class="captcha-input" placeholder="Капча">
+        </div>
           <button type="submit">Зарегистрироваться</button>
         </form>
       </div>
 
     </div>
+    <script src="../js/captcha.js"></script>
 
 
   </main>

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
 html, body {
-  /* Убирает прокрутку по горизонтале, для мобильной версии */
+  /* РЈР±РёСЂР°РµС‚ РїСЂРѕРєСЂСѓС‚РєСѓ РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рµ, РґР»СЏ РјРѕР±РёР»СЊРЅРѕР№ РІРµСЂСЃРёРё */
   overflow-x: hidden;
 }
 body {
@@ -23,14 +23,14 @@ main {
 
 
 
-/* Стиль активной/текущей ссылки */
+/* РЎС‚РёР»СЊ Р°РєС‚РёРІРЅРѕР№/С‚РµРєСѓС‰РµР№ СЃСЃС‹Р»РєРё */
 .header a.active {
   background-color: dodgerblue;
   color: white;
 }
 
 
-/* Стили для рубрики (категории) статей */
+/* РЎС‚РёР»Рё РґР»СЏ СЂСѓР±СЂРёРєРё (РєР°С‚РµРіРѕСЂРёРё) СЃС‚Р°С‚РµР№ */
 .category-container{
   margin-top: 80px;
   margin-bottom: 80px;
@@ -63,7 +63,7 @@ main {
 
 
 
-/* Стиль для текста внутри контейнере категории */
+/* РЎС‚РёР»СЊ РґР»СЏ С‚РµРєСЃС‚Р° РІРЅСѓС‚СЂРё РєРѕРЅС‚РµР№РЅРµСЂРµ РєР°С‚РµРіРѕСЂРёРё */
 .category-container h2 {
   font-size: 30px;
   color: oldlace;
@@ -74,7 +74,7 @@ main {
 }
 
 
-/* Стили для популярных статей */
+/* РЎС‚РёР»Рё РґР»СЏ РїРѕРїСѓР»СЏСЂРЅС‹С… СЃС‚Р°С‚РµР№ */
 
 .popular-articles-container{
   display: flex;
@@ -241,7 +241,7 @@ main {
  }
 
 
- /* Стили новых статей */
+ /* РЎС‚РёР»Рё РЅРѕРІС‹С… СЃС‚Р°С‚РµР№ */
 
 .new-articles-container{
   display: flex;
@@ -272,7 +272,7 @@ main {
 }
 
 
-/* Стили для "протекающего" луча вдоль границы */
+/* РЎС‚РёР»Рё РґР»СЏ "РїСЂРѕС‚РµРєР°СЋС‰РµРіРѕ" Р»СѓС‡Р° РІРґРѕР»СЊ РіСЂР°РЅРёС†С‹ */
 .new-articles-card::before {
   display: none;
   content: '';
@@ -298,7 +298,7 @@ main {
   }
 }
 
-/* Окно с контентом */
+/* РћРєРЅРѕ СЃ РєРѕРЅС‚РµРЅС‚РѕРј */
 .new-articles-card::after {
   content: '';
   position: absolute;
@@ -327,9 +327,9 @@ main {
   opacity: 1;
 }
 
-/* Стили для карточек лучших статей */
+/* РЎС‚РёР»Рё РґР»СЏ РєР°СЂС‚РѕС‡РµРє Р»СѓС‡С€РёС… СЃС‚Р°С‚РµР№ */
 
-/* Стили контейнера */
+/* РЎС‚РёР»Рё РєРѕРЅС‚РµР№РЅРµСЂР° */
 .best-article-container{
   display: flex;
   justify-content: space-evenly;
@@ -338,7 +338,7 @@ main {
   flex-wrap: wrap;
   gap: 40px;
 }
-/* Стили карточек */
+/* РЎС‚РёР»Рё РєР°СЂС‚РѕС‡РµРє */
 .best-article-card {
   width: 340px;
   height: 404px;
@@ -353,7 +353,7 @@ main {
 
 
 
-/* Задаем фон для каждой карточки */
+/* Р—Р°РґР°РµРј С„РѕРЅ РґР»СЏ РєР°Р¶РґРѕР№ РєР°СЂС‚РѕС‡РєРё */
 .best-article-card:nth-child(1){
   --card-color: #fae28b;
   background-color: var(--card-color)
@@ -370,7 +370,7 @@ main {
 }
 
 
-/* Стили для полукруга в карточке */
+/* РЎС‚РёР»Рё РґР»СЏ РїРѕР»СѓРєСЂСѓРіР° РІ РєР°СЂС‚РѕС‡РєРµ */
 .best-article-card::before{
   content: "";
   position: absolute;
@@ -441,7 +441,7 @@ main {
 }
 
 
-/* Стили для стрелки */
+/* РЎС‚РёР»Рё РґР»СЏ СЃС‚СЂРµР»РєРё */
 .arrow {
   --size: 20px;
   width: var(--size);
@@ -466,7 +466,7 @@ main {
 }
 
 
-/* Блюр остальных карточек, кроме hover */
+/* Р‘Р»СЋСЂ РѕСЃС‚Р°Р»СЊРЅС‹С… РєР°СЂС‚РѕС‡РµРє, РєСЂРѕРјРµ hover */
 .best-article-container:hover .best-article-card:not(:hover){
   filter: blur(5px);
 }
@@ -478,7 +478,7 @@ main {
   transform: scale(1.1);
 }
 
-/* Cтили для стрелки при наведении */
+/* CС‚РёР»Рё РґР»СЏ СЃС‚СЂРµР»РєРё РїСЂРё РЅР°РІРµРґРµРЅРёРё */
 .best-article-card:hover .best-article-card-icon {
   opacity: 1;
   transform: translateX(-75%);

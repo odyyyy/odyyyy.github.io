@@ -24,7 +24,7 @@ section {
 }
 
 
-/* Стили для популярных статей  aside*/
+/* РЎС‚РёР»Рё РґР»СЏ РїРѕРїСѓР»СЏСЂРЅС‹С… СЃС‚Р°С‚РµР№  aside*/
 #popular-articles {
   position: fixed;
   right: 0;
@@ -118,7 +118,7 @@ iframe {
 
   #popular-articles {
 
-    flex-basis: 100%;  /* растяжение элемента */
+    flex-basis: 100%;  /* СЂР°СЃС‚СЏР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° */
     position: relative;
     margin-top: 20px;
 
@@ -128,7 +128,7 @@ iframe {
 
   .popular-arcticles-container {
     display: flex;
-    order: 2; /* Меняем порядок, чтобы aside шел после main */
+    order: 2; /* РњРµРЅСЏРµРј РїРѕСЂСЏРґРѕРє, С‡С‚РѕР±С‹ aside С€РµР» РїРѕСЃР»Рµ main */
 
   }
 

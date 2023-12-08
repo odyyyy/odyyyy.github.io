@@ -9,7 +9,7 @@ body {
 
 }
 
-/* Стиль активной/текущей ссылки */
+/* РЎС‚РёР»СЊ Р°РєС‚РёРІРЅРѕР№/С‚РµРєСѓС‰РµР№ СЃСЃС‹Р»РєРё */
 .header a.active {
     background-color: dodgerblue;
     color: white;
@@ -91,20 +91,20 @@ body {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
-    display: none; /* Изначально скрыта */
+    display: none; /* РР·РЅР°С‡Р°Р»СЊРЅРѕ СЃРєСЂС‹С‚Р° */
     transition: all 0.5s;
   }
   
   .image-container:hover .read-more-button {
-    display: inline-block; /* Показать кнопку при наведении */
+    display: inline-block; /* РџРѕРєР°Р·Р°С‚СЊ РєРЅРѕРїРєСѓ РїСЂРё РЅР°РІРµРґРµРЅРёРё */
   }
 
   .image-container:hover img {
-    opacity: 0.7; /* Прозрачность при наведении */
+    opacity: 0.7; /* РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ РїСЂРё РЅР°РІРµРґРµРЅРёРё */
   }
   
   .image-container:hover .overlay {
-    opacity: 1; /* Прозрачность при наведении */
+    opacity: 1; /* РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ РїСЂРё РЅР°РІРµРґРµРЅРёРё */
   }
 
 

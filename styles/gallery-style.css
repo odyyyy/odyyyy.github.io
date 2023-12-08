@@ -12,7 +12,7 @@ main {
 }
 
 
-/* Стиль активной/текущей ссылки */
+/* РЎС‚РёР»СЊ Р°РєС‚РёРІРЅРѕР№/С‚РµРєСѓС‰РµР№ СЃСЃС‹Р»РєРё */
 .header a.active {
     background-color: dodgerblue;
     color: white;
@@ -49,7 +49,7 @@ main {
     border-radius: 15px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    /* Плавная анимация при наведении */
+    /* РџР»Р°РІРЅР°СЏ Р°РЅРёРјР°С†РёСЏ РїСЂРё РЅР°РІРµРґРµРЅРёРё */
 }
 
 

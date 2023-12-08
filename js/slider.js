@@ -1,6 +1,6 @@
 const swiper = new Swiper('.swiper', {
 
-    speed: 1000,
+    speed: 1500,
     // loop: true,
     // spaceBetween: 100,
     parallax: true,

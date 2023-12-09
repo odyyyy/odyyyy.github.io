@@ -144,17 +144,6 @@ body {
     }
 }
 
-/* @media screen and (max-width: 1050px) {
-    .article-title{
-        font-size:15px;
-    }
-}
-
-@media screen and (max-width: 820px) {
-    .article-title{
-        font-size:10px;
-    }
-} */
 
 @media screen and (max-width: 700px) {
   .parallax-content h1{

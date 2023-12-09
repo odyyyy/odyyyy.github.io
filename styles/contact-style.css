@@ -96,9 +96,7 @@ button {
 
 
 @media screen and (max-width: 850px) {
-    /* .glassmorphism-form{
-        height: 55vh;
-    } */
+
     .contact-form {
         
       grid-template-columns: 1fr; /* Одна колонка */

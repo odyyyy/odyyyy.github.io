@@ -10,7 +10,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10%;
+  height: 75px;
   width: 100%;
   z-index: 100;
   background-color: #242c2f;
@@ -113,7 +113,6 @@ body{
 
 
 
-
 @media screen and (max-width: 980px) {
 
 /* Отображение меню-бургера на экране */
@@ -174,18 +173,15 @@ body{
     position: sticky;
   }
 
-  /* Добавление анимации к иконки бургера */
   #check-menu:checked~header .burger span {
     transform: scale(0);
   }
-
 
 
   #check-menu:checked~header .burger::before {
     top: 50%;
     transform: rotate(-45deg) translate(0, -50%);
   }
-
 
   #check-menu:checked~header .burger::after {
     bottom: 50%;

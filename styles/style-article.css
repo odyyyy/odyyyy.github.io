@@ -17,6 +17,10 @@ main {
   max-width: 1200px;
 }
 
+.header{
+  position: sticky;
+}
+
 article,
 section {
   display: flex;

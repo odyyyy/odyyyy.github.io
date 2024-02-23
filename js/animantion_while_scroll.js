@@ -1,5 +1,5 @@
 let categoryElementsList = document.querySelectorAll('.category-container');
-let fadeInFromLeftThresholds = [0.6, 0.5, 0.7]; 
+let fadeInFromLeftThresholds = [0.6, 0.55, 0.7]; 
 
 window.addEventListener('scroll', function() {
   

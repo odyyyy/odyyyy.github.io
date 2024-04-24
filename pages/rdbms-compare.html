@@ -25,22 +25,19 @@
 
         <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="logo" width="50" height="50"></a>
         <nav class="header-nav">
-            <a href="../index.html">Главная</a>
-            <a href="all-articles.html">Все статьи</a>
-            <a href="contact.html">Контакты</a>
-
-
-            <!-- <div class="arrow">›</div> -->
+            <a href="../index.html">Home</a>
+            <a href="all-articles.html" class="active">All Articles</a>
+            <a href="contact.html">Contacts</a>
         </nav>
         <div class="auth">
 
-            <a href="login.html" class="login">Войти</a>
-            <a href="register.html" class="register">Регистрация</a>
+            <a href="login.html" class="login">Sign In</a>
+            <a href="register.html" class="register">Register</a>
 
         </div>
 
 
-        <div class="burger"> <!-- Иконка бургер меню -->
+        <div class="burger"> <!-- Burger Menu Icon -->
             <span></span>
         </div>
 
@@ -52,331 +49,309 @@
 
 
         <div class="popular-arcticles-container">
-            <aside id="popular-articles" class="popular-articles"> <!-- Боковой блок с ссылками на другие статьи -->
-                <h2>Популярные статьи</h2>
+            <aside id="popular-articles" class="popular-articles"> <!-- Sidebar with links to other articles -->
+                <h2>Popular Articles</h2>
                 <ul class="popular-articles-list">
-                    <li><a href="intro-article.html">Введение в РСУБД</a></li>
-                    <li><a href="dbms-safety.html">Способы защиты СУБД</a></li>
+                    <li><a href="intro-article.html">Introduction to RDBMS</a></li>
+                    <li><a href="dbms-safety.html">Ways to Secure DBMS</a></li>
                 </ul>
             </aside>
         </div>
-        <h1>Какую РСУБД выбрать?</h1>
-        <h2>Содержание статьи:</h2>
-        <nav> <!-- Меню для перемещения по странице -->
+        <h1>Which RDBMS to Choose?</h1>
+        <h2>Article Content:</h2>
+        <nav> <!-- Menu for navigating through the page -->
             <ol>
-                <li><a href="#rel"> <strong> Реляционные системы управления базами данных </strong></a> </li>
+                <li><a href="#rel"> <strong> Relational Database Management Systems </strong></a> </li>
                 <li>
-                    <a href="#popular"><strong>Популярные РСУБД</strong> </a>
+                    <a href="#popular"><strong>Popular RDBMS</strong> </a>
                 </li>
                 <li><a href="#sqlite"> <strong> SQLite</strong> </a></li>
                 <li><a href="#mysql"> <strong> MySQL</strong> </a></li>
                 <li><a href="#postgresql"> <strong> PostgreSQL</strong> </a></li>
-
-                <li><a href="#sumup"> <strong> Заключение </strong> </a></li>
-
+                <li><a href="#sumup"> <strong> Conclusion </strong> </a></li>
             </ol>
         </nav>
 
-
-
         <article>
-
             <section>
-                <p>Реляционные базы данных используются уже очень давно. Они стали популярными благодаря успешным
-                    реализациям реляционных моделей в системах управления, оказавшимся весьма удобными для работы с
-                    данными. В этой статье мы сравним три самые популярные реляционные системы управления базами данных
-                    (РСУБД): SQLite, MySQL и PostgreSQL.</p>
-                <h2 id="rel">Реляционные системы управления базами данных</h2>
+                <p>Relational databases have been used for a very long time. They became popular due to successful
+                    implementations of relational models in management systems, which proved to be very convenient for
+                    working with data. In this article, we will compare three of the most popular relational database
+                    management systems (RDBMS): SQLite, MySQL, and PostgreSQL.</p>
+                <h2 id="rel">Relational Database Management Systems</h2>
                 <p>
-                    Реляционные системы реализуют реляционную модель работы с данными, которая определяет всю хранимую
-                    информацию как набор связанных записей и атрибутов в таблице.
+                    Relational systems implement the relational model for working with data, which defines all stored
+                    information as a set of related records and attributes in a table.
                 </p>
                 <p>
-                    СУБД такого типа используют структуры (таблицы) для хранения и работы с данными. Каждый столбец
-                    (атрибут) содержит свой тип информации. Каждая запись в базе данных, обладающая уникальным ключом,
-                    передаётся в строку таблицы, и её атрибуты отображаются в столбцах таблицы.
+                    Databases of this type use structures (tables) to store and work with data. Each column (attribute)
+                    contains its type of information. Each record in the database, with a unique key, is passed to a
+                    table row, and its attributes are displayed in the table columns.
                 </p>
             </section>
 
             <section>
-                <h2 id="popular">Популярные РСУБД</h2>
-                <p>В этой статье мы расскажем о 3 наиболее популярных РСУБД:</p>
+                <h2 id="popular">Popular RDBMS</h2>
+                <p>In this article, we will talk about 3 of the most popular RDBMS:</p>
                 <ul>
-                    <li>SQLite: очень мощная встраиваемая РСУБД.</li>
-                    <li>MySQL: самая популярная и часто используемая РСУБД.</li>
-                    <li>PostgreSQL: самая продвинутая и гибкая РСУБД.</li>
+                    <li>SQLite: a very powerful embedded RDBMS.</li>
+                    <li>MySQL: the most popular and frequently used RDBMS.</li>
+                    <li>PostgreSQL: the most advanced and flexible RDBMS.</li>
                 </ul>
                 <img src="../images/MySQL-vs-PostgreSQL-vs-SQLite.png" alt="">
             </section>
 
             <section>
                 <h2 id="sqlite">SQLite</h2>
-                <p>SQLite — это изумительная библиотека, встраиваемая в приложение, которое её использует. Будучи
-                    файловой БД, она предоставляет отличный набор инструментов для более простой (в сравнении с
-                    серверными БД) обработки любых видов данных.
+                <p>SQLite is an amazing library embedded in applications that use it. Being a file-based database, it
+                    provides an excellent set of tools for simpler (compared to server databases) handling of any types
+                    of data.
                 </p>
                 <p>
-                    Когда приложение использует SQLite, их связь производится с помощью функциональных и прямых вызовов
-                    файлов, содержащих данные (например, баз данных SQLite), а не какого-то интерфейса, что повышает
-                    скорость и производительность операций.
+                    When an application uses SQLite, their connection is made through functional and direct calls to
+                    files containing data (such as SQLite databases), rather than through any interface, which increases
+                    the speed and performance of operations.
                 </p>
                 <img src="../images/sql-lite.png" alt="">
-                <h3>Поддерживаемые типы данных</h3>
+                <h3>Supported Data Types</h3>
                 <ul>
-                    <li>NULL: NULL-значение.</li>
-                    <li>INTEGER: целое со знаком, хранящееся в 1, 2, 3, 4, 6, или 8 байтах.</li>
-                    <li>REAL: число с плавающей запятой, хранящееся в 8-байтовом формате IEEE.</li>
-                    <li>TEXT: текстовая строка с кодировкойUTF-8, UTF-16BE или UTF-16LE.</li>
-                    <li>BLOB: тип данных, хранящийся точно в таком же виде, в каком и был получен.</li>
+                    <li>NULL: NULL value.</li>
+                    <li>INTEGER: signed integer, stored in 1, 2, 3, 4, 6, or 8 bytes.</li>
+                    <li>REAL: floating point number, stored in 8-byte IEEE format.</li>
+                    <li>TEXT: text string with UTF-8, UTF-16BE, or UTF-16LE encoding.</li>
+                    <li>BLOB: data type stored exactly as received.</li>
                 </ul>
-                <p>Для получения более подробной информации ознакомьтесь с <a
-                        href="https://www.sqlite.org/datatype3.html">документацией</a>.</p>
-                <h3>Преимущества</h3>
-
+                <p>For more detailed information, see the <a
+                        href="https://www.sqlite.org/datatype3.html">documentation</a>.</p>
+                <h3>Advantages</h3>
                 <ul>
-                    <li><strong>Высокая скорость.</strong> Благодаря особенностям архитектуры SQLite работает быстро,
-                        особенно на чтение. Компоненты СУБД встроены в приложение и вызываются в том же процессе.
-                        Поэтому доступ к ним быстрее, чем при взаимодействии между разными процессами.</li>
-                    <li><strong>Хранение данных в одном файле.</strong> База данных состоит из табличных записей, связей
-                        между ними, индексов и других компонентов. В SQLite они хранятся в едином файле (database file),
-                        который находится на том же устройстве, что и программа. Чтобы при работе не возникало ошибок,
-                        файл блокируется для сторонних процессов перед записью. Раньше это приводило к тому, что
-                        записывать данные в базу мог только один процесс единовременно. Но в новых версиях это решается
-                        перенастройкой режима работы СУБД.</li>
-                    <li><strong>Минимализм.</strong> Создатели SQLite пользуются принципом «минимального полного
-                        набора». Из всех возможностей SQL в ней есть наиболее нужные. Поэтому SQLite отличают малый
-                        размер, простота решений и легкость администрирования. Для повышения базовой функциональности
-                        можно использовать стороннее программное обеспечение и расширения.</li>
-                    <li><strong>Малый размер.</strong> Полностью сконфигурированный SQLite со всеми настройками занимает
-                        меньше 400 Кб. Если использовать СУБД без дополнительных компонентов, размер можно уменьшить до
-                        250 Кб. Он зависит только от количества загруженной информации. Несмотря на малый размер, SQLite
-                        поддерживает большинство функций стандарта SQL2 и имеет ряд собственных.</li>
-                    <li>
-                        <strong>Доступность.</strong> SQLite находится в публичном доступе. На ее использование нет
-                        правовых ограничений, а владельцем считается общество. Можно открывать, просматривать и изменять
-                        исходный код установленного ПО.
+                    <li><strong>High Speed.</strong> Thanks to the features of the SQLite architecture, it works fast,
+                        especially on reading. Database components are embedded in the application and called in the
+                        same process. Therefore, access to them is faster than when interacting between different
+                        processes.</li>
+                    <li><strong>Data Storage in a Single File.</strong> The database consists of table records, their
+                        relationships, indexes, and other components. In SQLite, they are stored in a single file
+                        (database file), which is located on the same device as the program. To avoid errors during
+                        operation, the file is locked for third-party processes before writing. Previously, this meant
+                        that only one process could write data to the database at a time. But in newer versions, this is
+                        solved by reconfiguring the DBMS operation mode.</li>
+                    <li><strong>Minimalism.</strong> SQLite creators follow the principle of "minimal complete set". Out
+                        of all SQL features, it includes the most necessary ones. Therefore, SQLite is characterized by
+                        a small size, simplicity of solutions, and ease of administration. To enhance basic
+                        functionality, you can use third-party software and extensions.</li>
+                    <li><strong>Small Size.</strong> A fully configured SQLite with all settings takes up less than 400
+                        KB. If you use the DBMS without additional components, the size can be reduced to 250 KB. It
+                        depends only on the amount of loaded information. Despite its small size, SQLite supports most
+                        of the SQL2 standard features and has its own set.</li>
+                    <li><strong>Availability.</strong> SQLite is publicly available. There are no legal restrictions on
+                        its use, and it is considered a community-owned asset. You can open, view, and modify the source
+                        code of the installed software.</li>
+                </ul>
+                <h3>Disadvantages</h3>
+                <ul>
+                    <li><strong>Limitations in Application.</strong> The absence of a server is both an advantage and a
+                        disadvantage. Without a server, the capabilities of the DBMS are fewer. For example, multiple
+                        different devices won't be able to access the same database.</li>
+                    <li><strong>Lack of Built-in Unicode Support.</strong> Unicode is a popular character encoding
+                        standard. It includes virtually all existing characters and letters, so it is considered the
+                        most widespread in the world. Without its support, the application won't be able to work
+                        correctly with Cyrillic, hieroglyphs, and many other characters. SQLite does not natively
+                        support Unicode; it needs to be configured separately. This can cause difficulties with
+                        localization.</li>
+                    <li><strong>Lack of User Management.</strong> Advanced databases provide users with the ability to
+                        manage relationships in tables according to privileges, but SQLite does not have this feature.
                     </li>
                 </ul>
-
-                <h3>Недостатки</h3>
-                <ul>
-                    <li><strong>Ограничения в применении.</strong> Отсутствие сервера — преимущество и недостаток
-                        одновременно. Без сервера возможности СУБД меньше. Например, к одной базе не смогут обращаться
-                        несколько разных устройств.</li>
-                    <li><strong>Отсутствие встроенной поддержки Unicode.</strong> Unicode — это популярный стандарт
-                        кодирования символов. Он включает практически все существующие знаки и буквы, поэтому считается
-                        самым распространенным в мире. Без его поддержки приложение не сможет корректно работать с
-                        кириллицей, иероглифами и многими другими символами. SQLite «из коробки» не поддерживает
-                        Unicode, его нужно настраивать отдельно. Это может вызвать сложности с локализацией.</li>
-                    <li><strong>Отсутствие пользовательского управления.</strong> Продвинутые БД предоставляют
-                        пользователям возможность управлять связями в таблицах в соответствии с привилегиями, но у
-                        SQLite такой функции нет.</li>
-                </ul>
-                <h3>Когда не стоит использовать</h3>
-                <p>1) Многопользовательские приложения: если вы работаете над приложением, доступом к БД в котором будут
-                    одновременно пользоваться несколько человек, лучше выбрать полнофункциональную РСУБД — например,
-                    MySQL.</p>
-                <p>2) Приложения, записывающие большие объёмы данных: одним из ограничений SQLite являются операции
-                    записи. Эта РСУБД допускает единовременное исполнение лишь одной операции записи.</p>
-
+                <h3>When Not to Use</h3>
+                <p>1) Multi-user applications: if you are working on an application where multiple people will
+                    simultaneously access the database, it's better to choose a full-featured RDBMS like MySQL.</p>
+                <p>2) Applications that write large volumes of data: one of SQLite's limitations is write operations.
+                    This DBMS allows only one write operation to be executed at a time.</p>
             </section>
-            <section>
-                <h2 id="mysql">MySQL</h2>
-                <p>
-                    MySQL — это самая популярная из всех крупных серверных БД. Разобраться в ней очень просто, да и в
-                    сети о ней можно найти большое количество информации. Хотя MySQL и не пытается полностью реализовать
-                    SQL-стандарты, она предлагает широкий функционал. Приложения общаются с базой данных через
-                    процесс-демон.
-                </p>
-                <img src="../images/mysql_logo.png" alt="">
-                <h3>Поддерживаемые типы данных</h3>
-                <ul type="disc">
-                    <li>TINYINT: очень маленькое целое.</li>
-                    <li>SMALLINT: маленькое целое.</li>
-                    <li>MEDIUMINT: целое среднего размера.</li>
-                    <li>INT или INTEGER: целое нормального размера.</li>
-                    <li>BIGINT: большое целое.</li>
-                    <li>FLOAT: знаковое число с плавающей запятой одинарной точности.</li>
-                    <li>DOUBLE, DOUBLE PRECISION, REAL: знаковое число с плавающей запятой двойной точности.</li>
-                    <li>DECIMAL, NUMERIC: знаковое число с плавающей запятой.</li>
-                    <li>DATE: дата.</li>
-                    <li>DATETIME: комбинация даты и времени.</li>
-                    <li>TIMESTAMP: отметка времени.</li>
-                    <li>TIME: время.</li>
-                    <li>YEAR: год в формате YY или YYYY.</li>
-                    <li>CHAR: строка фиксированного размера, дополняемая справа пробелами до максимальной длины.</li>
-                    <li>VARCHAR: строка переменной длины.</li>
-                    <li>TINYBLOB, TINYTEXT: BLOB- или TEXT-столбец длиной максимум 255 (2^8 – 1) символов.</li>
-                    <li>BLOB, TEXT: BLOB- или TEXT-столбец длиной максимум 65535 (2^16 – 1) символов.</li>
-                    <li>MEDIUMBLOB, MEDIUMTEXT: BLOB- или TEXT-столбец длиной максимум 16777215 (2^24 – 1) символов.
-                    </li>
-                    <li>LONGBLOB, LONGTEXT: BLOB- или TEXT-столбец длиной максимум 4294967295 (2^32 – 1) символов.</li>
-                    <li>ENUM: перечисление.</li>
-                    <li>SET: множества.</li>
-                </ul>
-                <h3>Преимущества</h3>
-                <ul>
-                    <li>Производительность: MySQL обладает хорошей производительностью и быстродействием благодаря
-                        оптимизированным алгоритмам выполнения запросов. Умеет работать с большими объемами данных с
-                        минимальными задержками.</li>
-                    <li>Безопасность: MySQL имеет в своем функционале различные функции безопасности, включая
-                        возможность установки привилегий пользователя, шифрование данных, аутентификацию и аудит, чтобы
-                        обезопасить информацию, хранящуюся в базах данных.</li>
-                    <li>
-                        Мощность и масштабируемость: MySQL может работать с действительно большими объёмами данных, и
-                        неплохо походит для масштабируемых приложений.
-                    </li>
-                    <li>Простота: MySQL легко устанавливается. Существует много сторонних инструментов, включая
-                        визуальные, облегчающих начало работы с БД.</li>
-                    <li>Гибкость: в MySQL реализованы различные типы данных, индексы, хранимые процедуры, триггеры и
-                        другие функции, обеспечивающие гибкость при обработке данных. Это дает возможность создания
-                        сложных схем данных. MySQL совместима с довольно большим количеством операционных системам.</li>
-                </ul>
-                <p>СУБД MySQL предлагает множество преимуществ, делающих ее популярной и широко используемым выбором для
-                    работы с базами данных.</p>
+        </article>
 
-                <h3>Недостатки</h3>
-                <ul>
-                    <li>Ограничения на производительность: MySQL может иметь проблемы с производительностью при
-                        обработке больших объемов данных или когда требуется обработка сложных запросов или подключение
-                        большого количества клиентов. Это может привести к замедлению работы или даже отказу в
-                        обслуживании.</li>
-                    <li>Ограниченный набор типов данных: MySQL имеет ограниченный набор типов данных по сравнению с
-                        некоторыми другими СУБД. Например, поддержка временных данных и географических данных ограничена
-                        по сравнению с некоторыми другими СУБД.</li>
-                    <li>MySQL не соответствует стандарту SQL: СУБД не поддерживает некоторые функции и имеет расширения,
-                        не относящиеся к стандартному SQL. Для большинства проектов это не станет серьезной проблемой,
-                        но при миграции на другие СУБД этот момент может всплыть.</li>
-                    <li>Сложность администрирования: MySQL может быть сложным для администрирования, особенно для
-                        новичков. Настройка и оптимизация параметров конфигурации может быть сложной задачей, требующей
-                        глубоких знаний и опыта.</li>
-                </ul>
-                <h3>Когда не стоит использовать</h3>
-                <p><i>SQL-совместимость:</i> поскольку MySQL не пытается полностью реализовать стандарты SQL, она не
-                    является полностью совместимой с SQL. Из-за этого могут возникнуть проблемы при интеграции с другими
-                    РСУБД.</p>
-                <p><i>Конкурентность:</i> хотя MySQL неплохо справляется с операциями чтения, одновременные операции
-                    чтения-записи могут вызвать проблемы.</p>
-                <p>Недостаток функций: в зависимости от выбора движка MySQL может недоставать некоторых функций.</p>
-            </section>
-            <section>
-                <h2 id="postgresql">PostgreSQL</h2>
-                <p>
-                    PostgreSQL — это самая продвинутая РСУБД, ориентирующаяся в первую очередь на полное соответствие
-                    стандартам и расширяемость. PostgreSQL, или Postgres, пытается полностью соответствовать
-                    SQL-стандартам ANSI/ISO.
-                </p>
-                <p>
-                    PostgreSQL отличается от других РСУБД тем, что обладает объектно-ориентированным функционалом, в том
-                    числе полной поддержкой концепта ACID (Atomicity, Consistency, Isolation, Durability).
-                </p>
-                <p>Будучи основанным на мощной технологии Postgres отлично справляется с одновременной обработкой
-                    нескольких заданий. Поддержка конкурентности реализована с использованием MVCC (Multiversion
-                    Concurrency Control), что также обеспечивает совместимость с ACID.</p>
-                <img src="../images/postgres-logo-1-1.png" alt="">
-                <h3>Поддерживаемые типы данных</h3>
-                <ul>
-                    <li>bigint: знаковое 8-байтное целое.</li>
-                    <li>bigserial: автоматически инкрементируемое 8-битное целое.</li>
-                    <li>bit [(n)]: битовая строка фиксированной длины.</li>
-                    <li>bit varying [(n)]: битовая строка переменной длины.</li>
-                    <li>boolean: булевская величина.</li>
-                    <li>box: прямоугольник на плоскости.</li>
-                    <li>bytea: бинарные данные.</li>
-                    <li>character varying [(n)]: строка символов фиксированной длины.</li>
-                    <li>character [(n)]: строка символов переменной длины.</li>
-                    <li>cidr: сетевой адрес IPv4 или IPv6.</li>
-                    <li>circle: круг на плоскости.</li>
-                    <li>date: календарная дата.</li>
-                    <li>double precision: число с плавающей запятой двойной точности.</li>
-                    <li>inet: адрес хоста IPv4 или IPv6.</li>
-                    <li>integer: знаковое 4-байтное целое.</li>
-                    <li>interval [fields] [(p)]: временной промежуток.</li>
-                    <li>line: бесконечная прямая на плоскости.</li>
-                    <li>lseg: отрезок на плоскости.</li>
-                    <li>macaddr: MAC-адрес.</li>
-                    <li>money: денежная величина.</li>
-                    <li>path: геометрический путь на плоскости.</li>
-                    <li>point: геометрическая точка на плоскости.</li>
-                    <li>polygon: многоугольник на плоскости.</li>
-                    <li>real: число с плавающей запятой одинарной точности.</li>
-                    <li>smallint: знаковое 2-байтное целое.</li>
-                    <li>serial: автоматически инкрементируемое 4-битное целое.</li>
-                    <li>text: строка символов переменной длины.</li>
-                    <li>time [(p)] [without time zone]: время суток (без часового пояса).</li>
-                    <li>time [(p)] with time zone: время суток (с часовым поясом).</li>
-                    <li>timestamp [(p)] [without time zone]: дата и время (без часового пояса).</li>
-                    <li>timestamp [(p)] with time zone: дата и время (с часовым поясом).</li>
-                    <li>tsquery: запрос текстового поиска.</li>
-                    <li>tsvector: документ текстового поиска.</li>
-                    <li>txid_snapshot: снэпшот ID пользовательской транзакции.</li>
-                    <li>uuid: уникальный идентификатор.</li>
-                    <li>xml: XML-данные.</li>
-                </ul>
-                <h3>Преимущества</h3>
-                <ul>
-                    <li>
-                        Сообщество: PostgreSQL поддерживается опытным сообществом
-                    </li>
-                    <li>Поддержка множества типов данных. Еще одна особенность PostgreSQL — поддержка большого
-                        количества типов записи информации. Это не только стандартные целочисленные значения, числа с
-                        плавающей точкой, строки и булевы значения («да/нет»), но и денежный, геометрический,
-                        перечисляемый, бинарный и другие типы. PostgreSQL «из коробки» поддерживает битовые строки и
-                        сетевые адреса, массивы данных, в том числе многомерные, композитные типы и другие сложные
-                        структуры. В ней есть поддержка XML, JSON и NoSQL-баз.</li>
-                    <li>Работа с большими объемами. В большинстве СУБД, рассчитанных на средние и небольшие проекты,
-                        есть ограничения по объему базы и количеству записей в ней. В PostgreSQL ограничений нет.</li>
-                    <li>Поддержка сложных запросов. PostgreSQL работает со сложными, составными запросами. Система
-                        справляется с задачами разбора и выполнения трудоемких операций, которые подразумевают и чтение,
-                        и запись, и валидацию одновременно. Она медленнее аналогов, если речь заходит только о чтении,
-                        но в других аспектах превосходит конкурентов.</li>
-                    <li>Объектно-ориентированность: PostgreSQL — не только реляционная, но и объектно-ориентированная
-                        СУБД.</li>
-                    <li>Поддержка сторонними организациями: несмотря на очень продвинутые функции, PostgreSQL
-                        используется в многих инструментах, связанных с РСУБД.</li>
-                    <li>Расширяемость: PostgreSQL можно программно расширить за счёт хранимых процедур.</li>
-                    <li>Соответствие ACID. ACID — это набор принципов для обеспечения целостности данных. Аббревиатура
-                        расшифровывается как Atomicity, Consistency, Isolation, Durability — атомарность,
-                        согласованность, изолированность, прочность.</li>
-                    <li>Открытость. PostgreSQL — ПО с открытым исходным кодом, которое распространяется по свободной
-                        лицензии. Это означает, что любой разработчик может посмотреть, как написана система, или
-                        предложить для нее свои правки.</li>
-                </ul>
+        </section>
+        <section>
+            <h2 id="mysql">MySQL</h2>
+            <p>
+                MySQL is the most popular of all major server databases. It is very easy to understand, and there is a
+                large amount of information about it available online. Although MySQL does not attempt to fully
+                implement SQL standards, it offers a wide range of functionality. Applications communicate with the
+                database through a daemon process.
+            </p>
+            <img src="../images/mysql_logo.png" alt="">
+            <h3>Supported Data Types</h3>
+            <ul type="disc">
+                <li>TINYINT: very small integer.</li>
+                <li>SMALLINT: small integer.</li>
+                <li>MEDIUMINT: medium-sized integer.</li>
+                <li>INT or INTEGER: normal-sized integer.</li>
+                <li>BIGINT: large integer.</li>
+                <li>FLOAT: single-precision floating-point number.</li>
+                <li>DOUBLE, DOUBLE PRECISION, REAL: double-precision floating-point number.</li>
+                <li>DECIMAL, NUMERIC: floating-point number.</li>
+                <li>DATE: date.</li>
+                <li>DATETIME: combination of date and time.</li>
+                <li>TIMESTAMP: timestamp.</li>
+                <li>TIME: time.</li>
+                <li>YEAR: year in YY or YYYY format.</li>
+                <li>CHAR: fixed-length string, padded with spaces to the maximum length.</li>
+                <li>VARCHAR: variable-length string.</li>
+                <li>TINYBLOB, TINYTEXT: BLOB- or TEXT-type column with a maximum length of 255 (2^8 – 1) characters.
+                </li>
+                <li>BLOB, TEXT: BLOB- or TEXT-type column with a maximum length of 65535 (2^16 – 1) characters.</li>
+                <li>MEDIUMBLOB, MEDIUMTEXT: BLOB- or TEXT-type column with a maximum length of 16777215 (2^24 – 1)
+                    characters.</li>
+                <li>LONGBLOB, LONGTEXT: BLOB- or TEXT-type column with a maximum length of 4294967295 (2^32 – 1)
+                    characters.</li>
+                <li>ENUM: enumeration.</li>
+                <li>SET: sets.</li>
+            </ul>
+            <h3>Advantages</h3>
+            <ul>
+                <li>Performance: MySQL has good performance and speed due to optimized query execution algorithms. It
+                    can handle large volumes of data with minimal delays.</li>
+                <li>Security: MySQL includes various security features, including user privilege settings, data
+                    encryption, authentication, and auditing, to secure the information stored in databases.</li>
+                <li>Power and scalability: MySQL can handle really large amounts of data and is suitable for scalable
+                    applications.</li>
+                <li>Simplicity: MySQL is easy to install. There are many third-party tools, including visual ones, that
+                    make it easier to get started with databases.</li>
+                <li>Flexibility: MySQL implements various data types, indexes, stored procedures, triggers, and other
+                    features that provide flexibility in data processing. This allows for the creation of complex data
+                    schemas. MySQL is compatible with quite a few operating systems.</li>
+            </ul>
+            <p>MySQL offers many advantages, making it a popular and widely used choice for working with databases.</p>
+            <h3>Disadvantages</h3>
+            <ul>
+                <li>Performance limitations: MySQL may have performance issues when processing large volumes of data or
+                    when complex queries need to be processed or when connecting a large number of clients. This can
+                    lead to slowdowns or even service failures.</li>
+                <li>Limited set of data types: MySQL has a limited set of data types compared to some other DBMSs. For
+                    example, support for temporal data and geographic data is limited compared to some other DBMSs.</li>
+                <li>MySQL does not comply with the SQL standard: The DBMS does not support some functions and has
+                    extensions that are not related to standard SQL. For most projects, this will not be a serious
+                    problem, but when migrating to other DBMSs, this issue may arise.</li>
+                <li>Complexity of administration: MySQL can be complex to administer, especially for beginners.
+                    Configuring and optimizing configuration parameters can be a challenging task requiring deep
+                    knowledge and experience.</li>
+            </ul>
+            <h3>When Not to Use</h3>
+            <p><i>SQL compatibility:</i> since MySQL does not attempt to fully implement SQL standards, it is not fully
+                compatible with SQL. This can cause problems when integrating with other RDBMSs.</p>
+            <p><i>Concurrency:</i> although MySQL handles read operations well, concurrent read-write operations can
+                cause problems.</p>
+            <p>Feature shortcomings: depending on the choice of MySQL engine, some features may be lacking.</p>
+        </section>
+        <section>
+            <h2 id="postgresql">PostgreSQL</h2>
+            <p>
+                PostgreSQL is the most advanced RDBMS, focusing primarily on full compliance with standards and
+                extensibility. PostgreSQL, or Postgres, aims to fully comply with ANSI/ISO SQL standards.
+            </p>
+            <p>
+                PostgreSQL differs from other RDBMSs in that it has object-oriented functionality, including full
+                support for the ACID (Atomicity, Consistency, Isolation, Durability) concept.
+            </p>
+            <p>Being based on the powerful Postgres technology, PostgreSQL handles concurrent processing of multiple
+                tasks excellently. Concurrency support is implemented using MVCC (Multiversion Concurrency Control),
+                which also ensures compatibility with ACID.</p>
+            <img src="../images/postgres-logo-1-1.png" alt="">
+            <h3>Supported Data Types</h3>
+            <ul>
+                <li>bigint: signed 8-byte integer.</li>
+                <li>bigserial: automatically incrementing 8-byte integer.</li>
+                <li>bit [(n)]: fixed-length bit string.</li>
+                <li>bit varying [(n)]: variable-length bit string.</li>
+                <li>boolean: boolean value.</li>
+                <li>box: rectangle on a plane.</li>
+                <li>bytea: binary data.</li>
+                <li>character varying [(n)]: fixed-length character string.</li>
+                <li>character [(n)]: variable-length character string.</li>
+                <li>cidr: IPv4 or IPv6 network address.</li>
+                <li>circle: circle on a plane.</li>
+                <li>date: calendar date.</li>
+                <li>double precision: double precision floating-point number.</li>
+                <li>inet: IPv4 or IPv6 host address.</li>
+                <li>integer: signed 4-byte integer.</li>
+                <li>interval [fields] [(p)]: time interval.</li>
+                <li>line: infinite line on a plane.</li>
+                <li>lseg: line segment on a plane.</li>
+                <li>macaddr: MAC address.</li>
+                <li>money: monetary value.</li>
+                <li>path: geometric path on a plane.</li>
+                <li>point: geometric point on a plane.</li>
+                <li>polygon: polygon on a plane.</li>
+                <li>real: single precision floating-point number.</li>
+                <li>smallint: signed 2-byte integer.</li>
+                <li>serial: automatically incrementing 4-byte integer.</li>
+                <li>text: variable-length character string.</li>
+                <li>time [(p)] [without time zone]: time of day (without time zone).</li>
+                <li>time [(p)] with time zone: time of day (with time zone).</li>
+                <li>timestamp [(p)] [without time zone]: date and time (without time zone).</li>
+                <li>timestamp [(p)] with time zone: date and time (with time zone).</li>
+                <li>tsquery: text search query.</li>
+                <li>tsvector: text search document.</li>
+                <li>txid_snapshot: snapshot of user transaction ID.</li>
+                <li>uuid: universally unique identifier.</li>
+                <li>xml: XML data.</li>
+            </ul>
 
-                <h3>Недостатки</h3>
-                <ul>
-                    <li>Сложности при настройке. У PostgreSQL очень обширный набор возможностей. Очевидно, что такое
-                        разнообразие функций влечёт за собой множество настроек, что может вызвать затруднения у
-                        новичков.</li>
-                    <li>Повышенное потребление ресурсов. В сравнении с некоторыми другими СУБД, PostgreSQL может
-                        потреблять больше ресурсов (включая оперативную память и процессорное время). Это особенно
-                        заметно при работе с большими объёмами данных и выполнении сложных запросов.</li>
-                    <li>Отсутствие некоторых функций. По сравнению с определенными коммерческими аналогами PostgreSQL
-                        может немного уступать в функциональности.</li>
-                    <li>Производительность: В простых операциях чтения PostgreSQL может уступать своим соперникам.</li>
-                </ul>
+            <h3>Advantages</h3>
+            <ul>
+                <li>Community support: PostgreSQL is supported by an experienced community.</li>
+                <li>Support for multiple data types: PostgreSQL supports a wide variety of data types, including
+                    standard integer values, floating-point numbers, strings, and boolean values, as well as monetary,
+                    geometric, enumerated, binary, and other types. PostgreSQL natively supports bit strings and network
+                    addresses, data arrays (including multidimensional arrays), composite types, and other complex
+                    structures. It has support for XML, JSON, and NoSQL databases.</li>
+                <li>Handling large volumes of data: PostgreSQL has no limitations on the size of the database or the
+                    number of records it can contain.</li>
+                <li>Support for complex queries: PostgreSQL can handle complex, composite queries, parsing and executing
+                    resource-intensive operations involving both reading and writing simultaneously.</li>
+                <li>Object-oriented: PostgreSQL is not only a relational but also an object-oriented DBMS.</li>
+                <li>Third-party support: Despite its advanced features, PostgreSQL is used in many tools related to
+                    RDBMSs.</li>
+                <li>Extensibility: PostgreSQL can be programmatically extended through stored procedures.</li>
+                <li>ACID compliance: ACID principles ensure data integrity.</li>
+                <li>Openness: PostgreSQL is open-source software distributed under a liberal license, allowing
+                    developers to view and contribute to its development.</li>
+            </ul>
 
-                <h3>Когда не стоит использовать PostgreSQL</h3>
-                <ul>
-                    <li>Скорость: если всё, что нужно — это быстрые операции чтения, не стоит использовать PostgreSQL.
-                    </li>
-                    <li>Простые ситуации: если вам не требуется повышенная надёжность, поддержка ACID и всё такое,
-                        использование PostgreSQL — это стрельба из пушки по мухам.</li>
-                </ul>
-            </section>
+            <h3>Disadvantages</h3>
+            <ul>
+                <li>Configuration complexities: PostgreSQL has an extensive range of features, which can lead to
+                    complexity in configuration settings, potentially causing difficulties for beginners.</li>
+                <li>Increased resource consumption: Compared to some other DBMSs, PostgreSQL may consume more resources
+                    (including memory and CPU time), especially noticeable when handling large volumes of data and
+                    executing complex queries.</li>
+                <li>Lack of some features: Compared to certain commercial counterparts, PostgreSQL may lack some
+                    functionality.</li>
+                <li>Performance: In simple read operations, PostgreSQL may lag behind its competitors.</li>
+            </ul>
 
-            <section>
-                <h2 id="sumup">Заключение</h2>
-                <p>
-                    Подводя итог, стоит отметить, что выбор между SQLite, MySQL и PostgreSQL должен определяться
-                    требованиями приложения. Небольшое приложение с отсутствием необходимости высокой производительности
-                    и масштабируемости делает привлекательным SQLite. А большой объем данных и высокая нагрузка – MySQL
-                    или PostgreSQL. Однако, в процессе подбора СУБД необходимо учитывать не только требования
-                    приложения, но и доступные ресурсы и опыт в управлении базами данных.
+            <h3>When Not to Use PostgreSQL</h3>
+            <ul>
+                <li>Speed: If all that is needed is fast read operations, PostgreSQL may not be the best choice.</li>
+                <li>Simple situations: If you don't require high reliability, ACID support, and so on, using PostgreSQL
+                    may be overkill.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 id="sumup">Conclusion</h2>
+            <p>
+                In conclusion, the choice between SQLite, MySQL, and PostgreSQL should be determined by the requirements
+                of the application. A small application with no need for high performance and scalability makes SQLite
+                an attractive option. For large amounts of data and high load, MySQL or PostgreSQL are suitable.
+                However, when choosing a DBMS, it is necessary to consider not only the requirements of the application
+                but also the available resources and experience in database management.
+            </p>
+        </section>
 
 
-                </p>
-            </section>
+        </p>
+        </section>
         </article>
 
 
@@ -390,14 +365,14 @@
 
 
             <div class="about-us">
-                <h2>О нас</h2>
-                <p>Данный сайт создан с целью сформировать единое сообщество разработчиков, заинтересованных в последних
-                    технологиях в сфере реляционных баз данных.</p>
-
+                <h2>About Us</h2>
+                <p>This website is created to form a unified community of developers interested in the latest
+                    technologies in
+                    the field of relational databases.</p>
             </div>
 
             <div class="navigation">
-                <h2>Информация</h2>
+                <h2>Information</h2>
                 <ul>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Help</a></li>
@@ -409,26 +384,23 @@
 
 
             <div class="contact-info">
-                <h2>Наши контакты</h2>
+                <h2>Contact Us</h2>
                 <div class="location">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                        viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
                         <path
                             d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
-                    <p>пр. Вернадского, 78 Москва, 119454</p>
+                    <p>Vernadskogo Ave, 78 Moscow, 119454</p>
                 </div>
                 <div class="phone">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                         <path
                             d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
                     </svg>
                     <p>+7 (123) 456-7890</p>
                 </div>
                 <div class="email">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                         <path
                             d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
                     </svg>
@@ -437,14 +409,16 @@
             </div>
 
             <div class="footer-col">
-                <h2>Подпишитесь</h2>
+                <h2>Subscribe</h2>
                 <div class="social-icons">
 
 
                     <button class="footer-social-link-youtube">
                         <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
                             <path class="footer-social-icon-path"
-                                d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z">
+                                d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26
+    
+    .001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z">
                             </path>
                         </svg>
                     </button>
